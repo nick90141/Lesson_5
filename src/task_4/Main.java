@@ -14,11 +14,14 @@ public class Main {
             System.out.print(element + " ");
         }
         System.out.println();
+
         ListIterator<Integer> listIterator = iterator.listIterator();
         while (listIterator.hasNext()) {
             Integer integer = listIterator.next() + 1;
-            System.out.print(integer + " ");
-
+            listIterator.set(integer);
+        }
+        for (Integer element : iterator) {
+            System.out.print(element + " ");
         }
     }
 }

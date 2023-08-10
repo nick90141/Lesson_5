@@ -24,10 +24,12 @@ public class Main {
             System.out.println("Индекс худшего: " + worst);
         }
     public static int best_teacher(List<String> teachers) {
-        return 3;
+        String bestTeacher = "Ekaterina Y.";
+        return teachers.indexOf(bestTeacher);
     }
     public static int worst_teacher(List<String> teachers) {
-        return 1;
+        String worst_teacher = "Maria Y.";
+        return teachers.indexOf(worst_teacher);
     }
 }
 
